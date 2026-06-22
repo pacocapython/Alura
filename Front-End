@@ -135,6 +135,98 @@ R= 500
 R= 404
 -------------------------------
 06 - Parâmetros da Requisição
+Requisições
+GET = é a ação de buscar, operação de trazer o resultado, pede alguma infromação pro servidor, enviados pela URL
+não altera nada no sistema, apenas lê os dados.
+POST = é a ação de postar o resultado, de apresentar a busca, é usado quando você quer enviar dados novos para o 
+servidor processar ou salvar. Ele geralmente altera o estado do sistema.
+
+--------------------------------------------------------------------------------------------------------------------
+*Vamos testar o envio de parâmetros através da requisição, fazendo uma busca no Google pela palavra Alura.
+Para isso, na URI do Google, vamos enviar na requisição o parâmetro q com o valor Alura. Ou seja: google.com.br/search?q=Alura
+Ao entrar nessa URI, qual método HTTP foi usado?
+R= GET.
+-----------------------------------------------------------------------------------------------------------------------------
+*Vimos que podemos enviar parâmetros em uma URL. Então, qual é a forma correta de enviá-los?
+R= http://calculadordeimc.com.br/?peso=44&altura=1.50
+---------------------------------------------------------
+Quando enviamos parâmetros na URL, devemos iniciar pelo ?, o nome do parâmetro e um =, para separar o nome do parâmetro do seu valor:
+?nome_do_parametro=seu_valorCopiar código
+
+Quando usamos mais do que um parâmetro devemos usar & para separá-los:
+?nome_do_parametro=seu_valor&nome_do_outro_param=valor
+-----------------------------------------------------------------------
+PARÂMETROS
+São informações complementares inseridas no final de um endereço web para transmitir dados, organizar conteúdos ou rastrear a origem de acessos 
+e conversões. Eles não alteram a página de destino
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
