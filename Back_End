@@ -13,4 +13,4 @@ U: A letra U representa o estado Untracked, do português não rastreado. Isso s
 -Visualizar os repositórios remotos linkados com o repositório local, utilizando o comando git remote;
 -Enviar commits feitos no repositório local para o repositório remoto, utilizando o comando git push;
 -Baixar commits do repositório remoto para o repositório local, utilizando o comando git pull;
--Adicionar uma pessoa como colaboradora em um repositório no GitHub, e também como aceitar um convite de colaboração recebido.
+-Adicionar uma pessoa como colaboradora em um repositório no GitHub, e também como aceitar um convite de colaboração recebido. 
