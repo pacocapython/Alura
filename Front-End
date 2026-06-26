@@ -159,6 +159,28 @@ Quando usamos mais do que um parâmetro devemos usar & para separá-los:
 PARÂMETROS
 São informações complementares inseridas no final de um endereço web para transmitir dados, organizar conteúdos ou rastrear a origem de acessos 
 e conversões. Eles não alteram a página de destino
+GET - Receber dados (params na URL)
+POST - Submeter dados (params no corpo da requisição)
+DELETE - Remover um recurso
+PUT - Atualizar um recurso
+Pode se especificar a aplicação do formato que quer receber, seja em: HTML, XML, JSON
+Aceppt: aplication/JSON
+Uma URI é um identificador universal de recursos, enquanto uma URL é um localizador específico que inclui o protocolo de acesso
+GET - recupera informações sobre o recurso identificado pela URI. Ex: listar restaurante, visualizar o restaurante 1. Uma requisição GET não deve modificar nenhum recurso do seu sistema, ou seja,
+não deve ter nenhum efeito colateral, você apenas recupera informações do sistema.
+POST - adiciona informações usando o recurso da URI passada. Ex: adicionar um restaurante. Pode adicionar informações a um recurso ou criar um novo recurso.
+PUT - adiciona (ou modifica) um recurso na URI passada. Ex: atualizar um restaurante.
+DELETE - remove o recurso representado pela URI passada. Ex: remover um restaurante.
+REST(Representational State Transfer) = Logo podemos perceber que o padrão usado pela equipe do webservice define que uma requisição web tem três tipos de componentes importantes:
+recursos (URI), operações (GET, POST, PUT, DELETE/...) e representação de dados(XML, JSON, ...).
+REST
+É um padrão arquitetural para comunicações entre aplicações
+Aproveita da estrutura que o HTTP proporciona
+.Recursos são definidos via URI
+.Operações com os métodos do HTTP(GET/POST/PUT/DELETE)
+.Cabeçalhos (Accept/Content-Type) para especificar a representação (JSON, XML,...)
+
+
 
 
 
