@@ -1,0 +1,34 @@
+BACK_END
+GIT e GITHUB
+git status = mostra como está os commits
+git log = mostra o historico dos commits
+git pull = baixar os commits do repositório remoto para o repositório local (que outras pessoas colocaram)
+git revert = não apaga o commit problemático. Ele adiciona um novo commit que traz o código de volta ao estado anterior.
+git reset --hard = apaga um commit
+git init = cria um repositório Git novo e vazio no diretório do seu projeto. Ele gera uma pasta oculta chamada .git,
+que contém todos os metadados e o histórico de controle de versão. Este é o primeiro passo para começar a rastrear alterações
+git config = configuraç~oes de usuarios
+A aula detalhou que o git revert é usado para reverter as mudanças de um commit de maneira automática, criando um novo commit que desfaz as alterações do commit original. 
+Isso é útil porque mantém o histórico do projeto intacto, o que é muito importante em projetos colaborativos.
+Já o git reset permite apagar um determinado commit do histórico, desfazendo automaticamente suas mudanças no código. 
+A aula mostrou que existem diferentes modos para o git reset, como o --soft, --mixed (que é o padrão) e --hard, cada um com um impacto diferente nos arquivos do seu diretório de trabalho e na área de staging.
+Além desses, a aula também abordou o comando git commit --amend. Ele é muito útil para modificar o último commit que você fez, 
+seja para alterar a mensagem do commit ou para incluir novas modificações no código que você esqueceu de adicionar. Isso ajuda a manter um histórico de commits mais limpo e preciso antes de compartilhar suas mudanças.
+Compreender esses comandos é fundamental para ter um controle eficaz sobre o histórico do seu projeto e para corrigir erros de forma segura.
+
+M: A letra M representa o estado Modified, do português modificado. Isso significa que o arquivo já existia no repositório, mas que recebeu alguma modificação que ainda não foi registrada no Git.
+U: A letra U representa o estado Untracked, do português não rastreado. Isso significa que o arquivo ainda não existia no repositório e que ainda não teve seu registro (commit) feito no Git.
+-Adicionar outras pessoas colaboradoras no projeto no GitHub
+-Baixar uma cópia de um repositório hospedado no GitHub para o seu computador, utilizando o comando git clone;
+-Realizar alterações no código de um projeto e registrá-las com commits, utilizando os comandos git add e git commit;
+-Visualizar quais arquivos foram modificados no repositório local, utilizando o comando git status;
+-Listar os commits realizados no repositório, com dados do autor, data e mensagem de cada commit, utilizando o comando git log;
+-Visualizar os repositórios remotos linkados com o repositório local, utilizando o comando git remote;
+-Enviar commits feitos no repositório local para o repositório remoto, utilizando o comando git push;
+-Baixar commits do repositório remoto para o repositório local, utilizando o comando git pull;
+-Adicionar uma pessoa como colaboradora em um repositório no GitHub, e também como aceitar um convite de colaboração recebido. 
+GITHUB
+README.md, da pra usar tags de html para personalizar o readme
+GIST pra compartilhar trechos de cofigo
+O SSH (Secure Shell) é um protocolo que permite acessar e controlar um computador ou servidor remoto de forma totalmente segura através da internet. 
+Ele criptografa toda a comunicação, impedindo que invasores roubem suas senhas ou comandos.
