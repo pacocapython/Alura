@@ -1,0 +1,17 @@
+VARIAVEIS
+const = declara variaveis, valor nao pode ser alterado apos ser declarado
+
+TIPOS DE DADOS
+Tipos Primitivos
+Number = 
+String = 
+Boolean =
+NODE.JS g
+OPERADORES
+FUNÇÕES
+console.log = exibe resultado e mensagem na tela
+EX :
+const meuNumero = 1;
+const meuNumero1 = 2;
+const operaçãoMatematica = meuNumero / meuNumero1 
+console.log(operaçãoMatematica) 
