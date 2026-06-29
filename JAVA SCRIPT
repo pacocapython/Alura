@@ -15,3 +15,4 @@ const meuNumero = 1;
 const meuNumero1 = 2;
 const operaçãoMatematica = meuNumero / meuNumero1 
 console.log(operaçãoMatematica) 
+contatenação = somar strings
