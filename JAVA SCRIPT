@@ -132,7 +132,30 @@ Linguagem interpretada
 O computador só entende 0 e 1. Para o seu código rodar, ele precisa ser traduzido:
 Interpretada (Ex: JavaScript, Python): O código é traduzido e executado linha por linha, em tempo real. É mais rápida para testar, mas pode ser um pouco mais lenta para tarefas super pesadas.
 Compilada (Ex: C++, Rust): O código inteiro é traduzido de uma vez só antes de rodar, gerando um arquivo final (tipo um .exe). É extremamente rápida, mas toda alteração exige traduzir tudo de novo.
+Oque é o Node.js?
+- Usar fora do navegador, usar em backend
+NODE.JS
 
+O que é: O Node.js não é uma linguagem de programação e nem um framework. Ele é um ambiente de execução (runtime) que permite rodar o JavaScript direto no computador ou servidor, sem depender de um navegador de internet (como Chrome ou Firefox).
+Como funciona (Por trás dos panos):
+O Motor V8: O Node.js pega o mesmo motor de JavaScript que o Google Chrome usa (chamado V8, feito em C++) e o coloca para rodar direto na sua máquina.
+Acesso ao Sistema: No navegador, o JavaScript é "preso" por segurança (não pode mexer nos seus arquivos). No Node.js, ele ganha superpoderes: consegue ler e criar arquivos no seu HD, conectar com bancos de dados (como MySQL) e criar servidores de internet.
+Single-Thread e Non-Blocking I/O: Ele processa tudo usando um único "caminho" (thread), mas não fica travado esperando uma tarefa pesada terminar (como ler um banco de dados). Ele joga essa tarefa para o sistema operacional e continua atendendo outras requisições. Quando a tarefa pesada termina, ele devolve o resultado. Isso o torna extremamente leve e rápido para o Back-End.
+Exemplo Prático no curso:
+Em vez de abrir uma página .html para ver o seu código funcionar, você abre o terminal do VS Code e digita:
+node seu-arquivo.js
+O Node.js interpreta o arquivo e exibe o resultado do seu console.log() direto no terminal.
+Erros quando acontecem aparecem no terminal, com uma mensagem expecificando o erro
+STACKTRACE (Rastro da Pilha)
+
+O que é: É o relatório ou "histórico" de erros que o JavaScript joga no seu terminal quando o código quebra. Ele serve como um mapa para você descobrir exatamente onde, como e por que o seu programa falhou.
+Como ler um StackTrace:
+Quando o código quebra, ele mostra o erro de baixo para cima (em formato de pilha):
+A Mensagem de Erro (No topo): Diz qual foi o problema (ex: ReferenceError: minhaVariavel is not defined).
+O Arquivo e a Linha (Logo abaixo): Mostra o caminho do arquivo e o número exato da linha onde o erro aconteceu (ex: at Object.<anonymous> (server.js:5:13) significa que o erro está na linha 5 do arquivo server.js).
+O Rastro (As linhas seguintes): Mostra o caminho que o código percorreu pelas funções até chegar no ponto em que estourou o erro.
+Por que é vital no Back-End:
+Como no Node.js você não tem uma tela visual para ver os erros acontecendo, o StackTrace no terminal é a sua ferramenta número um de sobrevivência para debugar (corrigir) o código.
 
 
 
