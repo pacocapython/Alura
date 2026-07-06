@@ -51,8 +51,87 @@ var: Não use em novos projetos.
 if e else que nem em python
 0 = false
 1 = true
+undefined = variavel que nao foi especificada, ela foi guardada, mas nao tem nenhum valor atribuido
+null = null é basicamente como o undefined, mas neste caso a variavel foi definida, e sua definição é null(vazzio)
+typeof = é uma palavra chave que serve para pergunta pro js qual o tipo de dado que está sendo guardado nesta variavel
+// null em type of retorna object, é tipo um bug do javascript
+let number = 1;
+console.log(typeof number)
 
+Truthy e Falsy:
+O que é: O JavaScript consegue avaliar outros tipos de dados (números, strings, null) dentro de um if como se fossem verdadeiros ou falsos.
 
+Falsy (Valores que o JS avalia como false):
+false
+0 (número zero)
+"" (string vazia)
+null
+undefined
+NaN (Not a Number)
+
+Truthy (Valores que o JS avalia como true):
+Todo o resto (qualquer número diferente de 0, strings preenchidas, etc.)
+Exemplo prático:
+let moedas = 0;
+if (moedas) {
+console.log("Tem moedas");
+} else {
+console.log("Não tem moedas"); // Vai cair aqui porque 0 é falsy
+}
+
+CONVERSÃO DE TIPOS E CONCATENAÇÃO
+
+O JavaScript permite converter dados de um tipo para outro. Isso pode acontecer de forma automática (implícita) ou de forma manual (explícita).
+Conversão Implícita (O JS faz sozinho):
+Acontece quando você tenta fazer operações com tipos diferentes.
+Ex: Se você somar um número com uma string, o JS converte o número para string e junta os dois.
+
+Conversão Explícita (Você força a mudança):
+Você usa funções nativas para transformar o tipo do dado de propósito.
+Number() = Transforma uma string em número.
+String() = Transforma um número em string.
+
+Exemplo prático:
+const numero = 456;
+const numeroString = "456";
+
+console.log(numero == numeroString);  // true (o JS converteu o tipo sozinho para comparar)
+console.log(numero === numeroString); // false (tipos diferentes: Number e String)
+console.log(numero + Number(numeroString)); // 912 (forçou a string a virar número e somou)
+
+Concatenação:
+O que é: É o ato de juntar (somar) duas ou mais strings para formar um texto único. O operador usado é o sinal de mais (+).
+Exemplo prático:
+const nome = "Gabriel";
+const cargo = "Guerreiro";
+
+const mensagem = "O " + nome + " é um " + cargo + ".";
+console.log(mensagem); // Resultado: O Gabriel é um Guerreiro.
+
+Cuidado com o sinal de +:
+Number + Number = Soma matemática (2 + 2 = 4)
+String + String = Concatenação ("2" + "2" = "22")
+String + Number = Concatenação ("2" + 2 = "22")
+
+EXEMPLO = NaN
+let meuNome = "leonardo";
+console.log(Number(meuNome)); // como a variável meuNome não contém apenas números ele retorna o erro NaN (Not a Number, não é número);
+console.log( + meuNome); // a conversão também retornará NaN
+
+O que é o JavaScript?
+Tipagem dinâmica
+- Não precisa declarar o tipo da variavel, ele ja entende sozinha
+Multiparadigma
+- Tem diversas formas de resolver diversos problemas
+Por que se chama JS?
+- Bla bla bla
+O que é ES6 / ES2015?
+- Atualização de correção de bugs
+Linguagem interpretada
+- LINGUAGEM INTERPRETADA VS COMPILADA
+O computador só entende 0 e 1. Para o seu código rodar, ele precisa ser traduzido:
+Interpretada (Ex: JavaScript, Python): O código é traduzido e executado linha por linha, em tempo real. É mais rápida para testar, mas pode ser um pouco mais lenta para tarefas super pesadas.
+Compilada (Ex: C++, Rust): O código inteiro é traduzido de uma vez só antes de rodar, gerando um arquivo final (tipo um .exe). É extremamente rápida, mas toda alteração exige traduzir tudo de novo.
 
 
 
