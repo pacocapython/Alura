@@ -162,6 +162,46 @@ ReferenceError: Normalmente ocorre quando o código tenta acessar algo que não 
 SyntaxError: Na maior parte dos casos ocorre quando há erros no programa e o JavaScript não consegue executá-lo. Os erros podem ser métodos ou propriedades escritos ou utilizados de forma incorreta, por exemplo, operadores ou sinais gráficos com elementos a menos, como esquecer de fechar chaves ou colchetes.
 TypeError: Indica que o código esperava receber um dado de um determinado tipo, tal qual uma string de texto, mas recebeu outro, como um número, booleano ou null.
 
+CONSOLE
+console.error() para exibir mensagens de erro;
+console.table() para visualizar de forma mais organizada informações tabulares;
+console.time() e console.timeEnd() para temporizar período que uma operação de código leva para ser iniciada e concluída;
+console.trace() para exibir a stacktrace de todos os pontos (ou seja, os arquivos chamados) por onde o código executado passou durante a execução.
+
+OPERADORES
+Operador de adição
+x+y
+Operador de subtração
+x-y
+Operador de multiplicação
+x*y
+Operador de divisão
+x/y
+||: Operador “ou”, retorna true caso uma condição seja válida;
+&&: Operador “e”, retorna true somente se todas as condições forem válidas;
+!= e !==: Operadores “não igual” e “estritamente não igual”, utilizados para comparação, da mesma forma que == e === retornam true ou false.
+
+OPERADOR TERNÁRIO
+O que é: É um jeito de escrever um if e um else muito mais curto, tudo em uma única linha de código. Ele recebe esse nome porque precisa de 3 elementos para funcionar.
+
+A estrutura dele:
+condição ? resultado_se_verdadeiro : resultado_se_falso;
+O ? funciona como a pergunta: "Isto é verdadeiro?"
+O : funciona como o senão (else): "Se não for, faça isso".
+
+Funciona como o if e else, recomenado para pequenas e curtas soluções, por ser mais dificil de entender por ser mais curto, mas é bom de se usar, segue a mesma logica
+console.log(idadeCliente >= idadeMinima ? "cerveja" : "suco")
+
+TEMPLATE LITERAL
+Em vez de ultilizarmos concatenação (soma de strings), podemos usar o template literal, que seria como neste exemplo
+Em vez de: const apresentacao = "meu nome é " + nome + ", minha idade é " + idade + " e nasci na cidade de " + cidadeDeNascimento;
+Podemos simplificar e melhorar o codgip, funcionalidade e visibilidade, usando template string, seguindo está formula:
+const apresentacao = `meu nome é ${nome}, minha idade é ${idade} e nasci na cidade de ${cidadeDeNascimento}`;
+Onde nós ultilizamos o acento com crase (`), para colocarmos as variaveis junto com as strings sem precisar somá-las, ultilizando o
+símbolo de $, e abrindo chaves {}, e dentro das chavez colocamos as variaveis
+
+
+
 
 
 
