@@ -27,8 +27,7 @@ A propriedade length pode ser utilizada para sabermos quantos caracteres uma str
 == = compara o valor, sem comparar tipos
 === = compara o valor e o tipo
 -------------------------------------------------------------------------------------------------
-var:
-
+VAR
 O que é: A forma mais antiga de declarar variáveis.
 Características: Muito flexível, pode ser usada antes de ser declarada e permite redeclarações.
 Quando usar: Evite usar em códigos novos. Pode causar bugs e dificultar o controle do código.
@@ -177,8 +176,17 @@ Operador de multiplicação
 x*y
 Operador de divisão
 x/y
+Operador de comparação
+> maior que
+< menor que
+>= maior ou igual que
+<= menor ou igual que
+= recebe valor
+== compara valor
+=== compara valor e tipo
 ||: Operador “ou”, retorna true caso uma condição seja válida;
 &&: Operador “e”, retorna true somente se todas as condições forem válidas;
+!: não
 != e !==: Operadores “não igual” e “estritamente não igual”, utilizados para comparação, da mesma forma que == e === retornam true ou false.
 
 OPERADOR TERNÁRIO
@@ -200,7 +208,146 @@ const apresentacao = `meu nome é ${nome}, minha idade é ${idade} e nasci na ci
 Onde nós ultilizamos o acento com crase (`), para colocarmos as variaveis junto com as strings sem precisar somá-las, ultilizando o
 símbolo de $, e abrindo chaves {}, e dentro das chavez colocamos as variaveis
 
+FUNÇÕES
+DECLARAÇÃO DE FUNÇÃO
+O que é: É uma estrutura no código que funciona como uma "palavra-chave avançada". Enquanto const e let guardam apenas dados parados (números, textos),
+a function guarda um bloco de código inteiro (ações, contas, if/else) focado em realizar uma tarefa específica.
+Função Tradicional (Declaração):
 
+JavaScript
+function somar(a, b) {
+    return a + b;
+}
+
+Os Dois Momentos da Função:
+Declaração: É quando você cria a "máquina" e ensina o que ela deve fazer.
+
+Execução / Chamada: É quando você liga a máquina usando o nome dela seguido de parênteses ().
+
+Parâmetros (Entradas)
+São as informações que a função precisa receber para conseguir trabalhar. Eles ficam dentro dos parênteses () na declaração e funcionam como variáveis exclusivas daquela função.
+
+O return (Saída)
+É a resposta que a função cospe de volta para o seu programa depois de terminar o trabalho. Você usa o return para poder guardar o resultado da função dentro de uma const ou let do lado de fora.
+
+Nota: Quando o JavaScript bate na linha do return, a função para de rodar na hora.
+Por que usar? (Sua Sacada!)
+Não Repetir Código: Escreve a lógica uma vez só e usa no sistema inteiro.
+
+Manutenção Fácil: Se a regra mudar, você só corrige dentro da função e o Back-End inteiro se atualiza sozinho.
+
+Organização: Deixa o código limpo, legível e profissional.
+
+FUNÇÕES MATEMÁTICAS
+Math.round(): Faz o arredondamento (round em inglês) de um número de ponto flutuante para o inteiro mais próximo.
+Math.round(4.3) retorna 4
+Math.round(3.85) retorna 4
+Math.round(2.5) retorna 3, quando o número termina com 0.5 a função arredonda para cima
+
+Math.ceil(): Faz o arredondamento para o valor mais alto, também conhecido como teto (ceil em inglês).
+Math.ceil(5.2) retorna 6
+
+Math.floor(): Faz o arredondamento para o valor mais baixo, também conhecido como piso (floor em inglês).
+Math.floor(5.2) retorna 5
+
+Math.trunc() : Desconsidera os números decimais, o que é conhecido como truncamento.
+Math.trunc(4.3) retorna 4
+Math.trunc(4.8) retorna 4
+
+Math.pow() : Faz a exponenciação de 2 números, quando for simples, como ao quadrado(2) ou cubo(3). Recomenda-se usar a multiplicação por ser mais rápido.
+Math.pow(4 , 2) retorna 4^2 = 16
+Math.pow(2.5 , 1.5) retorna 2.5^(3/2) = 3.9528 ...
+
+Math.sqrt() : Retorna a raiz quadrada de um número.
+Math.sqrt(64) retorna 8
+
+Math.min(): Retorna o menor valor entre os argumentos.
+Math.min(0, 150, 30, 20, -8, -200) retorna -200
+
+Math.max(): Retorna o maior valor entre os argumentos.
+Math.max(0, 150, 30, 20, -8, -200) retorna 150
+
+Math.random(): Retorna um valor randômico (random em inglês) entre 0 e 1, então não teremos um valor esperado para receber.
+Math.random() retorna 0.7456916270759015
+Math.random() retorna 0.15449802102729304
+Math.random() retorna 0.4214269561951203
+
+EXPRESSÃO DE FUNÇÃO (Function Expression)
+
+O que é: É quando você cria uma função e, em vez de declará-la do jeito tradicional, você a guarda diretamente dentro de uma variável (const ou let).
+
+Como escrever (Comparativo):
+Função Tradicional (Declaração):
+
+JavaScript
+function somar(a, b) {
+    return a + b;
+}
+Expressão de Função (Guardada na variável):
+
+JavaScript
+const somar = function(a, b) {
+    return a + b;
+};
+
+// Para executar, você usa o nome da variável:
+console.log(somar(5, 3)); // Exibe 8
+A grande diferença: Hoisting (Içamento)
+Essa é a pegadinha clássica em entrevistas de emprego e provas:
+Na Função Tradicional: O JavaScript "puxa" a declaração da função para o topo do arquivo antes de rodar. Isso significa que você pode chamar a função na linha 1, mesmo que ela só esteja escrita na linha 10.
+Na Expressão de Função: Como ela está guardada dentro de uma variável (const), o JavaScript não puxa ela para o topo. Você só pode chamar a função depois da linha em que declarou a variável. Se tentar chamar antes, o código quebra.
+
+Por que usar?
+Controle: Garante que as funções só sejam usadas depois de serem devidamente criadas no arquivo, evitando comportamentos estranhos no código.
+Passar como parâmetro: Facilita muito quando você precisa passar uma função inteira como argumento para dentro de outra função (um conceito muito usado no Node.js chamado Callback).
+
+ARROW FUNCTIONS
+O que é: É uma forma ainda mais curta e moderna de escrever expressões de função, introduzida no JavaScript em 2015 (ES6). Ela recebe esse nome por causa do símbolo => 
+(uma mistura de igual com maior que), que parece uma seta.
+
+Como a sintaxe evolui (Do tradicional ao mais curto):
+Olha como o mesmo código vai encolhendo:
+
+Função Tradicional:
+
+function dobro(numero) {
+    return numero * 2;
+}
+Expressão de Função (O resumo anterior):
+
+const dobro = function(numero) {
+    return numero * 2;
+};
+Arrow Function (Sintaxe padrão):
+Tiramos a palavra function e colocamos a seta => depois dos parênteses.
+
+const dobro = (numero) => {
+    return numero * 2;
+};
+Arrow Function com Retorno Implícito (Ultra curta):
+Se a sua função só faz uma única coisa (uma linha), você pode tirar as chaves {} e a palavra return. O JavaScript já entende que deve retornar o resultado automaticamente!
+
+const dobro = numero => numero * 2; 
+
+// Nota: Se tiver apenas 1 parâmetro, você pode até tirar os parênteses dele!
+⚡ As Super Regras da Arrow Function:
+Sem chaves = Retorno Automático: Se você não usar { }, não precisa escrever return. Se usar { }, o return passa a ser obrigatório se quiser devolver um valor.
+Não têm this próprio: No JavaScript mais avançado, você vai aprender sobre a palavra-chave this. As Arrow Functions não criam o seu próprio this, elas herdam do lugar onde foram criadas. Isso evita muitos bugs clássicos de orientação a objetos.
+Não sofrem Hoisting: Assim como as expressões de função, você não pode chamar uma Arrow Function antes da linha em que ela foi declarada.
+
+CONDICIONAIS
+O que é: É a estrutura que permite ao seu programa tomar decisões. Com ela, o código deixa de ser uma sequência linear e passa a seguir caminhos diferentes 
+dependendo se uma condição é verdadeira (true) ou falsa (false).
+As Três Peças do Quebra-Cabeça:
+
+if (Se): O ponto de partida. Se a condição for verdadeira, o código dentro dele roda.
+else if (Senão, se): Usado para testar novas condições caso a primeira tenha sido falsa. (É o equivalente ao elif do Python). Você pode colocar quantos else if precisar.
+else (Senão): O "porto seguro". Ele não recebe nenhuma condição. O código dentro dele só roda se todas as condições anteriores falharem.
+
+
+
+
+  
 
 
 
