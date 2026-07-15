@@ -31,13 +31,13 @@ VAR
 O que é: A forma mais antiga de declarar variáveis.
 Características: Muito flexível, pode ser usada antes de ser declarada e permite redeclarações.
 Quando usar: Evite usar em códigos novos. Pode causar bugs e dificultar o controle do código.
-let:
 
+LET
 O que é: Introduzido para resolver problemas do var.
 Características: A variável precisa ser declarada antes de ser usada. Seu valor pode ser alterado (reatribuído) depois da declaração. Tem escopo de bloco (funciona dentro de {}).
 Quando usar: Use quando você sabe que o valor da variável precisará mudar ao longo do programa.
-const:
 
+CONST
 O que é: Introduzido para declarar constantes.
 Características: A variável precisa ser declarada e inicializada com um valor no mesmo momento. Seu valor não pode ser alterado (é fixo) depois da declaração. Tem escopo de bloco.
 Quando usar: Use para valores que nunca devem mudar no seu programa. É a opção mais segura e recomendada para a maioria dos casos.
