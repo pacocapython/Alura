@@ -1,27 +1,3 @@
-VARIAVEIS
-const = declara variaveis, valor nao pode ser alterado apos ser declarado
-
-TIPOS DE DADOS
-Tipos Primitivos
-Number = 
-String = 
-Boolean =
-NODE.JS g
-OPERADORES
-FUNÇÕES
-console.log = exibe resultado e mensagem na tela
-EX :
-const meuNumero = 1;
-const meuNumero1 = 2;
-const operaçãoMatematica = meuNumero / meuNumero1 
-console.log(operaçãoMatematica) 
-contatenação = somar strings
-toLowerCase() que converte todos os caracteres da string informada (no caso, input) para letras minúsculas 
-const ciidade = "sp";
-const cidade = "Sp";
-const cidadeMinusc = cidade.toLowerCase();
-console.log(ciidade === cidadeMinusc);
-
 A propriedade length pode ser utilizada para sabermos quantos caracteres uma string contém:
 = atribui valor a uma variavel 
 == = compara o valor, sem comparar tipos
