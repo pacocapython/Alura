@@ -32,3 +32,17 @@ README.md, da pra usar tags de html para personalizar o readme
 GIST pra compartilhar trechos de cofigo
 O SSH (Secure Shell) é um protocolo que permite acessar e controlar um computador ou servidor remoto de forma totalmente segura através da internet. 
 Ele criptografa toda a comunicação, impedindo que invasores roubem suas senhas ou comandos.
+
+GUA=IA DE NAVEGAÇÃO NO TERMINAL
+Comandos Principais:
+
+• cd  -> Entra em uma pasta que está dentro do diretório atual. (Exemplo: cd bloco3-template...)
+• cd .. -> Volta 1 nível (sai da pasta atual e vai para a pasta anterior).
+• cd ../ -> Volta 1 nível e entra em outra pasta que está ao lado. (Exemplo: cd ../bloco4-funcoes...)
+• dir -> Lista todos os arquivos e pastas do local onde você está.
+
+Dicas Úteis:
+
+• Tecla Tab: Digite o começo do nome de uma pasta ou arquivo e aperte Tab para o terminal completar o nome sozinho.
+• Setas para cima e para baixo: Navegam pelo histórico dos últimos comandos que você já executou.
+• cls: Limpa a tela do terminal para tirar a poluição visual.
