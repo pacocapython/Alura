@@ -39,5 +39,35 @@ JavaScript permite misturar diferentes tipos (números, strings, booleanos) no m
 Boa prática: trabalhar com um único tipo de dado por array
 
 ADICIONANDO ELEMENTOS
--push-
+.push()
 O método push() adiciona um elemento ao final de um array, permitindo modificar a lista mesmo quando ela é declarada como constante.
+
+DELETANDO ELEMENTOS
+.pop()
+Remove o último elemento de um array, modificando o array original.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
