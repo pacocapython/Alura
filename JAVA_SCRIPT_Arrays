@@ -1,18 +1,39 @@
 ARRAYS
-O que é um array:
+-O que é um array-
 Um array é uma lista que armazena múltiplos valores em uma única variável.
 
-Sintaxe básica:
+-Sintaxe básica-
 Use colchetes com valores separados por vírgula: [10, 6.5, 8, 7.5]
 
-Índice:
+-Índice-
 Cada elemento tem uma posição numérica que começa em 0 (não em 1).
 
-Acessar elementos:
+-Acessar elementos-
 Use a sintaxe notas[0], notas[1], etc., para pegar um valor específico.
 
-Propriedade length:
+-Propriedade length-
 notas.length retorna quantos elementos estão no array.
 
-Vantagem dos arrays:
+-Vantagem dos arrays-
 Você não precisa criar uma variável para cada dado. Uma única lista organiza tudo de forma mais prática e escalável.
+
+COMO FUNCIONAM OS ARRAYS
+
+-Nomenclatura de Arrays-
+Identificador: o nome do array (exemplo: notas)
+Elementos/itens/valores: os dados guardados dentro do array
+Índices/posições: identificadores numéricos únicos de cada elemento, começando sempre do zero
+
+-Criação de Arrays-
+Sintaxe
+const notas = [10, 6.5, 7.5, 10];
+Valores separados por vírgula dentro de colchetes
+Pode usar const, let ou var
+
+-Acesso a Elementos-
+Usar o nome do array seguido de colchetes com a posição desejada
+Exemplo: notas[2] acessa o elemento na posição 2
+
+-Tipos de Dados em Arrays-
+JavaScript permite misturar diferentes tipos (números, strings, booleanos) no mesmo array
+Boa prática: trabalhar com um único tipo de dado por array
