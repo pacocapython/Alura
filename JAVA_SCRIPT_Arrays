@@ -1,1 +1,18 @@
+ARRAYS
+O que é um array:
+Um array é uma lista que armazena múltiplos valores em uma única variável.
 
+Sintaxe básica:
+Use colchetes com valores separados por vírgula: [10, 6.5, 8, 7.5]
+
+Índice:
+Cada elemento tem uma posição numérica que começa em 0 (não em 1).
+
+Acessar elementos:
+Use a sintaxe notas[0], notas[1], etc., para pegar um valor específico.
+
+Propriedade length:
+notas.length retorna quantos elementos estão no array.
+
+Vantagem dos arrays:
+Você não precisa criar uma variável para cada dado. Uma única lista organiza tudo de forma mais prática e escalável.
