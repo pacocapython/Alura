@@ -91,11 +91,64 @@ Como utilizar os métodos .push() e .pop():
 Vimos como realizar as primeiras alterações em um array, como adicionar um novo item ao final ou remover o último item.
 ------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------
+02. ALTERANDO ARRAYS
+• Método slice() fatia um array sem modificar o original
 
+• Retorna um novo array que deve ser armazenado em uma variável
 
+• Sintaxe: array.slice(início, fim)
 
+• Primeiro parâmetro: índice onde começar
 
+• Segundo parâmetro: índice onde terminar (não incluído)
 
+• Sem segundo parâmetro: seleciona até o final do array
+
+• Exemplo: alunos.slice(0, 10) pega elementos do índice 0 ao 9
+
+• Diferença: push() e pop() alteram o array; slice() não
+
+• Código dinâmico: usar array.length / 2 em vez de valores fixos
+
+• Aplicação prática: dividir 20 alunos em duas salas de 10 cada
+------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+ALTERANDO COM splice()
+
+• Método splice(): permite remover e adicionar elementos em qualquer posição do array
+
+• Parâmetros do splice():
+
+1º parâmetro: índice onde começar
+2º parâmetro: quantidade de elementos a remover
+3º parâmetro (opcional): elemento a inserir
+• Exemplo prático: nomes.splice(1, 2, "Rodrigo") remove 2 elementos a partir do índice 1 e insere Rodrigo
+
+• Importante: splice() altera o array original, não cria um novo
+------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------
+CONCATENANDO ARRAYS
+• Método concat() junta dois ou mais arrays em um novo array
+• Não altera os arrays originais
+• Retorna um novo array com o resultado da concatenação
+• A ordem dos arrays passados afeta a ordem final dos elementos
+• Sintaxe: arrayA.concat(arrayB)
+• Exemplo: salaJS.concat(salaPython) une as duas listas de estudantes
+-----------------------------------------------------------------------
+
+LISTA COM DUAS DIMENSÕES
+• Listas podem conter outras listas dentro delas
+• Uma lista bidimensional tem uma lista "externa" e listas "internas"
+• Para criar uma lista com duas dimensões, basta colocar outras listas como elementos dela
+• Para acessar elementos em listas bidimensionais, use duplo índice: lista[índice_externo][índice_interno]
+• O primeiro índice acessa a lista interna desejada
+• O segundo índice acessa o elemento dentro dessa lista interna
+• Exemplo: listaDeAlunosEMedias[0][1] acessa Juliana (posição 1 da lista de alunos que está na posição 0)
+• Essa sintaxe pode parecer confusa inicialmente, mas melhora com a prática
+------------------------------------------------------------------------------------------------------------
 
 
 
