@@ -37,3 +37,7 @@ Exemplo: notas[2] acessa o elemento na posição 2
 -Tipos de Dados em Arrays-
 JavaScript permite misturar diferentes tipos (números, strings, booleanos) no mesmo array
 Boa prática: trabalhar com um único tipo de dado por array
+
+ADICIONANDO ELEMENTOS
+-push-
+O método push() adiciona um elemento ao final de um array, permitindo modificar a lista mesmo quando ela é declarada como constante.
