@@ -46,8 +46,50 @@ DELETANDO ELEMENTOS
 .pop()
 Remove o último elemento de um array, modificando o array original.
 
+MÉTODOS
+Um método é uma função que serve como uma propriedade do array ou de um objeto (que veremos em outro curso). 
+Ele pode realizar tarefas pré-definidas usando os dados do array e dos parâmetros que passamos para eles, 
+como adicionar, remover ou até encontrar elementos.
 
+1. Adicionando e Removendo Elementos
+-push(): Adiciona um ou mais elementos no final do array. Altera o original.
+-unshift(): Adiciona um ou mais elementos no início do array, recalculando os índices. Altera o original.
+-pop(): Remove o último elemento do array. Altera o original.
+-shift(): Remove o primeiro elemento do array, recalculando os índices. Altera o original.
+-splice(): Remove, substitui ou adiciona novos elementos em qualquer posição escolhida. Altera o original.
 
+2. Busca e Localização
+-find(): Retorna o primeiro elemento que satisfaz a condição da função de teste. Retorna undefined se não encontrar nada.
+-findIndex(): Retorna o índice do primeiro elemento que satisfaz a condição. Retorna -1 se não encontrar.
+-lastIndexOf(): Funciona como o findIndex, mas procura do final para o início do array.
+
+3. Iteração e Transformação
+-forEach(): Executa uma função para cada elemento do array de forma individual. Não altera o array original e retorna undefined.
+-filter(): Cria um novo array contendo apenas os elementos que passaram no teste da função, ou seja, onde o retorno for true. Não altera o array original.
+-reduce() e reduceRight(): Executa uma função acumuladora para cada elemento, reduzindo o array a um único valor, como uma soma total ou a construção de um objeto. Não alteram o array original.
+-reduce(): Processa do início para o fim (esquerda para a direita).
+-reduceRight(): Processa do fim para o início (direita para a esquerda).
+
+4. Manipulação, Cópia e Ordenação
+-concat(): Junta dois ou mais arrays e retorna um novo array. Não altera o original.
+-slice(): Copia uma fatia do array, especificada por início e fim, para um novo array. Não altera o original.
+-reverse(): Inverte a ordem dos elementos do array. Altera o array original.
+-sort(): Ordena os elementos com base na tabela Unicode. Altera o array original. Para ordenar números corretamente, é necessário passar uma função de comparação, por exemplo: array.sort((a, b) => a - b).
+
+Dica de Boas Práticas
+No desenvolvimento moderno, especialmente em Node.js e React, priorize o uso de métodos imutáveis como map, 
+filter, reduce, concat e slice. Evitar alterar o array original previne erros indesejados no código.
+
+----------------------------------------------------------------------------------------------------------
+As características principais de arrays:
+Um array é uma lista ordenada de dados. Você aprendeu a sintaxe de como criar um array e acessar seus valores.
+Os conceitos de elemento e índice:
+Elementos são os valores que um array guarda, e índice é o identificador único e numérico de cada elemento do array.
+Como utilizar a propriedade .length:
+Todos os arrays do JavaScript possuem essa propriedade, que indica a quantidade de elementos do array.
+Como utilizar os métodos .push() e .pop():
+Vimos como realizar as primeiras alterações em um array, como adicionar um novo item ao final ou remover o último item.
+------------------------------------------------------------------------------------------------------------------------
 
 
 
