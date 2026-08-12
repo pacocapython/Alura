@@ -140,6 +140,7 @@ CONCATENANDO ARRAYS
 -----------------------------------------------------------------------
 
 LISTA COM DUAS DIMENSÕES
+MATRIZES
 • Listas podem conter outras listas dentro delas
 • Uma lista bidimensional tem uma lista "externa" e listas "internas"
 • Para criar uma lista com duas dimensões, basta colocar outras listas como elementos dela
