@@ -150,6 +150,7 @@ MATRIZES
 • Exemplo: listaDeAlunosEMedias[0][1] acessa Juliana (posição 1 da lista de alunos que está na posição 0)
 • Essa sintaxe pode parecer confusa inicialmente, mas melhora com a prática
 ------------------------------------------------------------------------------------------------------------
+LAÇOS DE REPETIÇÃO
 
 
 
