@@ -150,7 +150,28 @@ MATRIZES
 • Exemplo: listaDeAlunosEMedias[0][1] acessa Juliana (posição 1 da lista de alunos que está na posição 0)
 • Essa sintaxe pode parecer confusa inicialmente, mas melhora com a prática
 ------------------------------------------------------------------------------------------------------------
+includes(): Este método é usado para verificar se um determinado elemento está presente em um array. Ele retorna true se o elemento for encontrado e false caso contrário. 
+Na aula, ele foi usado para checar se o nome do aluno existe na lista.
+
+Método indexOf(): Este método retorna o primeiro índice em que um determinado elemento pode ser encontrado no array. Se o elemento não estiver presente, ele retorna -1. 
+Na aula, ele foi crucial para encontrar a posição do aluno na lista de nomes e, com essa posição, acessar a média correspondente na lista de notas.
+
+Arrays de duas dimensões (ou arrays aninhados): Você trabalhou com listaDeAlunosEMedias, que é um array que contém outros dois arrays (alunos e medias). 
+A aula enfatizou a importância de se familiarizar com a sintaxe para acessar elementos nesses tipos de estruturas, como listaDeAlunosEMedias[0] para a lista de alunos e listaDeAlunosEMedias[1]
+para a lista de médias, e depois listaDeAlunosEMedias[1][indice] para acessar a média específica.
+Estrutura if-else para controle de fluxo: Embora você possa já conhecer if-else, a aula demonstrou como usá-lo de forma eficaz para criar uma lógica condicional: verificar se o aluno existe (if) e,
+se não, exibir uma mensagem de erro (else).
+
+Template strings: Você viu como usar (crases) para criar strings que permitem a interpolação de variáveis diretamente no texto, como em `${aluno} tem a média ${mediaDoAluno}.`. 
+Isso torna a concatenação de strings mais legível e prática.
+
+ Sintaxe de desestruturação de listas: que permite atribuir elementos de um array a variáveis de forma mais direta. Em vez de criar uma constante para cada posição do array,
+como const alunos = listaDeAlunosEMedias[0]; e const medias = listaDeAlunosEMedias[1];, você aprendeu a usar a sintaxe const [alunos, medias] = listaDeAlunosEMedias;.
+Isso torna o código mais limpo e fácil de entender, pois nomeia os elementos da lista de forma mais concisa.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LAÇOS DE REPETIÇÃO
+
 
 
 
