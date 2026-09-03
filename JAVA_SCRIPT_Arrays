@@ -171,6 +171,21 @@ Isso torna o código mais limpo e fácil de entender, pois nomeia os elementos d
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LAÇOS DE REPETIÇÃO
+FOR
+FOR: Uma estrutura de laço de repetição usada para executar um bloco de código múltiplas vezes, ideal para percorrer listas de forma dinâmica.
+
+Sintaxe do for clássico:
+for (expressão 1; expressão 2; expressão 3) { // bloco de código }
+
+As três expressões do for:
+Inicialização (let indice = 0): Executada uma única vez no início do laço, geralmente para declarar e inicializar uma variável de controle.
+Condição de Execução (indice < 6): Avaliada antes de cada iteração. O laço continua enquanto esta condição for verdadeira.
+Incremento/Decremento (indice++): Executada ao final de cada iteração do bloco, geralmente para atualizar a variável de controle.
+Funcionamento: O laço inicia com a expressão 1, depois verifica a expressão 2. Se verdadeira, executa o bloco, depois a expressão 3, e repete a verificação da expressão 2.
+
+Importância da condição: A condição deve, em algum momento, se tornar falsa para evitar um loop infinito.
+
+Tornando o for dinâmico: Usar array.length (ex: indice < numeros.length) na condição de execução é uma boa prática para que o laço se adapte automaticamente ao tamanho do array.
 
 
 
