@@ -197,6 +197,13 @@ Calcular a media dividindo somaDasNotas por notas.length.
 Exibir a media no console.
 Benefício: Código mais dinâmico, fácil de manter e menos propenso a erros, funcionando para qualquer tamanho de array.
 
+FOR OF
+for of para iterar arrays: Uma nova estrutura para percorrer elementos de um array.
+Sintaxe simplificada: for (let item of array).
+Automação da iteração: Percorre o array do início ao fim automaticamente.
+Cálculo de média: Usado para somar elementos e calcular a média.
+Diferença for vs for of: for of é mais conciso para percorrer todo o array; for é mais flexível para iterações personalizadas.
+
 
 
 
