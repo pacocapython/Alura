@@ -187,6 +187,45 @@ Importância da condição: A condição deve, em algum momento, se tornar falsa
 
 Tornando o for dinâmico: Usar array.length (ex: indice < numeros.length) na condição de execução é uma boa prática para que o laço se adapte automaticamente ao tamanho do array.
 
+Problema: Calcular a média de notas de forma dinâmica.
+Solução: Utilizar o laço de repetição for.
+Passos:
+Declarar um array de notas.
+Inicializar uma variável somaDasNotas com 0.
+Usar o for para iterar sobre o array e somar cada nota à somaDasNotas.
+Calcular a media dividindo somaDasNotas por notas.length.
+Exibir a media no console.
+Benefício: Código mais dinâmico, fácil de manter e menos propenso a erros, funcionando para qualquer tamanho de array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
