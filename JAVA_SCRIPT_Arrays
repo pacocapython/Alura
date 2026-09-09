@@ -223,6 +223,22 @@ Parâmetros da função callback no forEach: Descobrimos que a função callback
 Comparação com for of: Notamos que o forEach é similar ao for of por fornecer o valor do elemento, mas o forEach tem a vantagem de também poder fornecer o índice.
 
 
+Função anônima tradicional: 
+nomes.forEach(function (nome) {
+  console.log(nome);
+});
+
+Arrow function: 
+nomes.forEach((nome) => {
+  console.log(nome);
+});
+
+Função externa nomeada: 
+function imprimeNome(nome) {
+  console.log(nome);
+}
+
+nomes.forEach(imprimeNome);
 
 
 
