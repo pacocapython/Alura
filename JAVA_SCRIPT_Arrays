@@ -240,6 +240,34 @@ function imprimeNome(nome) {
 
 nomes.forEach(imprimeNome);
 
+forEach() para trabalhar com arrays da forma mais corriqueira - percorrendo do primeiro ao último elemento, sem alterar a condição de parada,
+e também para manter a coesão do estilo quando em conjunto com outros métodos de array como map, filter e etc;
+
+for…of em caso de iteráveis (dicionários, conjuntos e outras estruturas de dados) ou de arrays quando for necessário o uso de programação assíncrona
+e/ou dar condições de saída do laço (por exemplo, com o uso de break);
+
+for para casos em que seja necessário manipular de forma mais fina as fases do laço (condição inicial, condição de parada e incremento).
+
+
+map() :
+Método map(): Utilizado para criar um novo array transformando os elementos de um array existente.
+
+Função callback: O map() recebe uma função que define como cada elemento será transformado.
+
+Não modifica o array original: O map() retorna um novo array com as transformações, sem alterar o array inicial.
+
+Operador ternário: Pode ser usado dentro do map() para aplicar condições na transformação dos elementos.
+
+Nesta aula vimos:
+Como utilizar o forEach:
+Aprendemos mais uma forma de iterar sobre arrays, dessa vez com um método próprio deles. O forEach recebe uma função callback que será executada para cada item do array.
+Diferentes formas de utilizar funções callback:
+Podemos utilizar funções anônimas (como arrow functions) diretamente como funções callback, ou então criar funções de forma externa e utilizá-las no parâmetro.
+Como utilizar o map:
+O map também aceita funções callback, assim como o forEach, e é adequado para quando queremos "reescrever" os valores de um array, sem modificar o array original. Um novo array é criado com os valores reescritos.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
