@@ -266,7 +266,7 @@ Podemos utilizar funções anônimas (como arrow functions) diretamente como fun
 Como utilizar o map:
 O map também aceita funções callback, assim como o forEach, e é adequado para quando queremos "reescrever" os valores de um array, sem modificar o array original. Um novo array é criado com os valores reescritos.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+ 
 
 
 
