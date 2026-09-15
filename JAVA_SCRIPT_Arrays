@@ -266,8 +266,32 @@ Podemos utilizar funções anônimas (como arrow functions) diretamente como fun
 Como utilizar o map:
 O map também aceita funções callback, assim como o forEach, e é adequado para quando queremos "reescrever" os valores de um array, sem modificar o array original. Um novo array é criado com os valores reescritos.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
+ FILTER
+filter() cria um novo array: Ele serve para filtrar elementos de um array existente e retorna um novo array com os elementos que atendem a uma condição.
 
+filter() usa uma função para decidir: Dentro do filter(), você escreve uma função que decide, para cada item, se ele deve ou não entrar no novo array (retornando true ou false).
+
+Acesso ao índice é útil: Essa função pode usar o índice do elemento para fazer comparações, como foi feito para verificar as notas dos alunos.
+
+
+O reduce() serve para transformar um array inteiro em um único valor final (que pode ser um número, uma string, um objeto ou outro array).
+A Estrutura BaseJavaScript
+
+const resultado = array.reduce((acumulador, itemAtual) => {
+    return acumulador + itemAtual;
+}, valorInicial);
+acumulador (acc): Guarda o resultado das operações anteriores a cada volta do laço.itemAtual: O elemento do array que está sendo processado no momento.valorInicial: O valor onde o acumulador começa (ex: 0 para somas).Exemplo Prático: Somando valoresJavaScriptconst precos = [10, 20, 30];
+
+const total = precos.reduce((acc, preco) => acc + preco, 0);
+
+console.log(total);
+
+Passo a Passo da Execução
+1ª volta: acc começa em 0 + 10 (item) $\rightarrow$ acc passa a ser 10.
+2ª volta: acc é 10 + 20 (item) $\rightarrow$ acc passa a ser 30.
+3ª volta: acc é 30 + 30 (item) $\rightarrow$ acc passa a ser 60.Resultado Final: 60.
+💡 Regra de OuroUse o reduce() sempre que você precisar processar todos os itens de uma lista e extrair um único resultado consolidado no final
+(como o total de um carrinho de compras, a média de notas ou uma contagem).
 
 
 
