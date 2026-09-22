@@ -293,7 +293,29 @@ Passo a Passo da Execução
 💡 Regra de OuroUse o reduce() sempre que você precisar processar todos os itens de uma lista e extrair um único resultado consolidado no final
 (como o total de um carrinho de compras, a média de notas ou uma contagem).
 
+Spread Operator
 
+Problema da Atribuição Direta: Ao atribuir um array a outro usando =, ambos os arrays apontam para o mesmo local na memória. Alterar um afeta o outro.
+
+Solução com Spread Operator (...): O spread operator permite "espalhar" os elementos de um array em um novo array, criando uma cópia independente.
+
+Sintaxe do Spread Operator:
+Para copiar: const novoArray = [...arrayOriginal];
+Para copiar e adicionar elementos: const novoArray = [...arrayOriginal, novoElemento]; ou const novoArray = [novoElemento, ...arrayOriginal];
+
+Benefício: Clona arrays sem problemas de referência, garantindo que o array original permaneça inalterado.
+
+SET
+
+Apresentação do Set: Foi introduzida a estrutura Set, que é uma classe do JavaScript e tem a característica de não permitir elementos repetidos.
+
+Criação de um Set: Você viu como criar um Set a partir de uma lista existente, passando a lista como argumento para new Set().
+
+Remoção de duplicatas: Ao criar um Set com a lista de nomes, os elementos repetidos foram automaticamente removidos.
+
+Conversão de Set para Array: Para obter a lista de volta no formato de array, foi utilizado o spread operator (...) no Set.
+
+Forma concisa: Foi mostrada uma maneira mais direta de realizar todo o processo em uma única linha de código: [...new Set(nomes)].
 
 
 
