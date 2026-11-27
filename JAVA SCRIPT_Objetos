@@ -1,1 +1,81 @@
+OBJETOS
+
+O que são objetos: Estruturas que permitem representar entidades (como uma pessoa) através de pares de chave e valor.
+
+Sintaxe: Utilizamos chaves {} para definir o objeto e nomeamos as propriedades (chaves) seguidas pelos seus respectivos valores, separados por vírgulas.
+
+Diferença de arrays: Enquanto arrays dependem da posição (índice) dos itens, os objetos utilizam nomes para as propriedades, o que torna o acesso aos dados mais claro e independente da ordem de declaração.
+Copiar texto da Luri para área de transferêcia
+
+EXEMPLO:
+
+const objetoPessoa = {
+  nome: "Jose",
+  idade: 32,
+  cpf: "1111222333"
+};
+
+ACESSANDO DADOS
+
+Acesso a propriedades: Utilização do operador ponto (.) para acessar valores específicos de um objeto, em vez de imprimir o objeto completo.
+
+Integração com Template Strings: Uso de crases (``) e a sintaxe ${} para inserir dinamicamente valores das propriedades dentro de textos.
+
+Manipulação de valores: Aplicação de métodos de tipos de dados (como o substring() para strings) diretamente no retorno da propriedade do objeto acessada via ponto.
+
+EXEMPLO:
+const cliente = {
+  nome: "Andre",
+  idade: 32,
+  cpf: "1122233345"
+};
+
+console.log(`O cliente é ${cliente.nome}`);
+
+console.log(`Os 3 primeiros dígitos são: ${cliente.cpf.substring(0, 3)}`);
+
+O cliente é Andre
+Os 3 primeiros dígitos são: 112
+
+ACESSANDO DADOS COM COLCHETES
+
+A notação de colchetes permite acessar as propriedades de um objeto usando uma string, de forma similar ao que fazemos com arrays.
+
+Essa técnica é fundamental quando o nome da propriedade que precisamos acessar é dinâmico, ou seja, quando não o conhecemos no momento em que estamos escrevendo o código.
+
+Ao tentar acessar uma chave que não existe no objeto, o JavaScript retorna o valor especial undefined, em vez de gerar um erro que interromperia a execução do programa.
+
+EXEMPLO:
+const cliente = {
+nome: "Andre",
+idade: 32
+};
+
+const chaves = ["nome", "idade"];
+
+chaves.forEach((chave) => {
+console.log(A chave ${chave} tem valor ${cliente[chave]});
+});
+
+Note que, ao usar cliente[chave], o JavaScript interpreta o conteúdo da variável chave para buscar o valor correspondente dentro do objeto cliente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
